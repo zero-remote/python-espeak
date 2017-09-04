@@ -100,8 +100,10 @@ PyEspeakCB(short* wave, int num_samples, espeak_EVENT* event)
 			if (event->type == espeakEVENT_MSG_TERMINATED)
 				finished = true;
 			if (event->type == espeakEVENT_LIST_TERMINATED)
+			{
 				break;
 				++event;
+			}
 			}
 			AsyncPython = 0;
 		}
