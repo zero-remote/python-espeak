@@ -5,6 +5,7 @@ from setuptools import setup, Extension, Command
 module = Extension('espeak.core',
 	sources = ['espeak/espeakmodulecore.cpp'],
 	libraries = ['espeak-ng'],
+    include_dirs = ['/usr/include/python3.5m'],
     library_dirs=['/usr/local/lib'])
 
 setup(
