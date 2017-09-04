@@ -1,18 +1,19 @@
 #! /usr/bin/env python
 
-from distutils.core import setup, Extension
+from setuptools import setup, Extension, Command
 
 module = Extension('espeak.core',
 	sources = ['espeak/espeakmodulecore.cpp'],
-	libraries = ['espeak'])
+	libraries = ['espeak-ng'],
+    library_dirs=['/usr/local/lib'])
 
 setup(
-    name = 'python-espeak',
-    version = '0.6',
+    name = 'pySpeak',
+    version = '0.1',
     description = 'Python C extension for the eSpeak speech synthesizer',
-    author = 'Siegfried-A. Gevatter Pujals',
-    author_email = 'asrp@email.com',
-    url = 'https://github.com/asrp/python-espeak',
+    author = 'Swapnil Davangave',
+    author_email = 'swapnil.davangave@liveweaver.com',
+    url = 'https://github.com/zero-remote/python-espeak',
     license = 'GNU GPL',
     platforms = 'posix',
     ext_modules = [module],

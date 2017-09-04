@@ -1,0 +1,38 @@
+Translate 'test'
+  1	t        [t]
+
+  1	e        [E]
+
+  1	s        [s]
+
+  1	t        [t]
+
+Translate 'first'
+  1	f        [f]
+
+ 36	ir       [3:]
+  1	i        [I]
+
+  1	s        [s]
+
+  1	t        [t]
+
+Translate 'sentence'
+  1	s        [s]
+
+  1	e        [E]
+
+  1	n        [n]
+
+  1	t        [t]
+
+100	&) en (ce_ [@n]
+  1	e        [E]
+
+  1	c        [k]
+ 22	c (e     [s]
+
+ 41	&) e (_  []
+  1	e        [E]
+
+ t'Est f'3:st s'Ent@ns
